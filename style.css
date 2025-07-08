@@ -25,16 +25,21 @@ body, html {
   color: #2a3b2e;
 }
 
-.navbar ul {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 
-.navbar ul li a {
+.nav-link {
+  color: green;
   text-decoration: none;
-  color: #2a3b2e;
-  font-weight: 600;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f1c40f;
 }
 
 .cta {
