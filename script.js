@@ -22,3 +22,20 @@ $(document).ready(function () {
     ]
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const serviceBoxes = document.querySelectorAll('.service-box');
+
+  serviceBoxes.forEach(box => {
+    const imageContainer = box.querySelector('.image-container');
+    const description = imageContainer.querySelector('.service-description');
+
+    imageContainer.addEventListener('mouseenter', () => {
+      description.style.bottom = '0';
+    });
+
+    imageContainer.addEventListener('mouseleave', () => {
+      description.style.bottom = '-100%';
+    });
+  });
+});

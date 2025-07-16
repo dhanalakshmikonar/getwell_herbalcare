@@ -78,10 +78,9 @@ body, html {
 }
 
 /* Slide Backgrounds */
-.slide1 { background-image: url('img/hospital1.jpg'); }
-.slide2 { background-image: url('img/hospital2.jpg'); }
-.slide3 { background-image: url('img/hospital3.jpg'); }
-.slide4 { background-image: url('img/hospital4.jpg'); }
+.slide1 { background-image: url('img/hospital4.jpeg'); }
+.slide2 { background-image: url('img/hospital1.jpg'); }
+
 
 .slide-content {
   background: rgba(0, 0, 0, 0.4);
@@ -391,4 +390,54 @@ body {
 
 .contact-map:hover iframe {
   transform: scale(1.01);
+}
+
+.services-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-box {
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.service-description {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 123, 255, 0.9);
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: bottom 0.4s ease;
+  font-size: 14px;
+}
+
+.service-box h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
 }
