@@ -1,0 +1,8 @@
+hospital_app/
+├── app.py
+├── templates/
+│   ├── index.html
+│   ├── success.html
+├── static/
+│   └── style.css
+└── appointments.db
