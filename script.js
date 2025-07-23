@@ -56,3 +56,28 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
+
+  // hamburger.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger-menu');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    navLinks.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+      navLinks.classList.remove('open');
+    }
+  });
+
+  // Close on nav item click
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+    });
+  });
+});
