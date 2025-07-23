@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GetWell Herbal Care</title>
   <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="shortcut icon" href="img/logo.png" type="image/png">
 
 
   <!-- Slick CSS -->
@@ -12,6 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+ 
 </head>
 <body>
 
@@ -31,13 +33,15 @@
         <li><a href="#service" class="nav-link">Our Services</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#contact" class="nav-link">Contact Us</a></li>
-        <li><a href="http://127.0.0.1:5000" class="nav-link" target="_blank">Book Appointment</a></li>
+        
         
       </ul>
     </nav>
     <div class="cta">
-      <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 6389 892 833</p>
-      <a href="#" class="btn">Book Appointment</a>
+      <a href="tel:+916369892833" class="cta-phone-btn">
+        <i class="fas fa-phone"></i>
+        <span><strong>Phone:</strong> +91 6369 892 833</span>
+      </a>
     </div>
   </header>
 
@@ -61,6 +65,8 @@ We specialize in treating acidity, ulcers, IBS, liver disorders, and more.”</p
    
     </div>
   </div><br><br>
+  
+<script src="script.js"></script>s
   </section>
 
   <!-- Scripts -->
@@ -101,71 +107,94 @@ We specialize in treating acidity, ulcers, IBS, liver disorders, and more.”</p
 
 </center><br><br>
   <div class="services-grid">
+    <!-- ...existing service boxes... -->
     <div class="service-box">
-  <div class="image-container">
-    <img src="img/ibd.jpg" alt="IBS">
-    <p class="service-description">A chronic gastrointestinal disorder causing abdominal pain, bloating, and altered bowel habits.</p>
+      <div class="image-container">
+        <img src="img/ibd.jpg" alt="IBS">
+        <p class="service-description">A chronic gastrointestinal disorder causing abdominal pain, bloating, and altered bowel habits.</p>
+      </div>
+      <h3>IBS - Irritable Bowel Syndrome</h3>
+    </div>
+    <div class="service-box">
+      <div class="image-container">
+        <img src="img/svc4.jpg" alt="IBD">
+        <p class="service-description">An umbrella term for chronic inflammation of the digestive tract, including Crohn's disease and ulcerative colitis.</p>
+      </div>
+      <h3>IBD - Inflammatory Bowel Disease</h3>
+    </div>
+    <div class="service-box">
+      <div class="image-container">
+        <img src="img/svc3.jpg" alt="GERD">
+        <p class="service-description">A condition where stomach acid frequently flows back into the esophagus, causing heartburn and discomfort.</p>
+      </div>
+      <h3>GERD - Gastroesophageal Reflux Disease</h3>
+    </div>
+    <div class="service-box">
+      <div class="image-container">
+        <img src="img/svc5.jpg" alt="Gall Bladder">
+        <p class="service-description">Disorders affecting the gallbladder, often involving gallstones or inflammation (cholecystitis).</p>
+      </div>
+      <h3>Gall Bladder Diseases</h3>
+    </div>
+    <div class="service-box">
+      <div class="image-container">
+        <img src="img/svc6.jpg" alt="Peptic Ulcer">
+        <p class="service-description">Open sores that develop on the inner lining of the stomach or upper part of the small intestine due to acid erosion.</p>
+      </div>
+      <h3>Peptic Ulcer Disease</h3>
+    </div>
+    <div class="service-box">
+      <div class="image-container">
+        <img src="img/svc7.jpg" alt="Celiac Disease">
+        <p class="service-description">An autoimmune disorder triggered by gluten ingestion, leading to small intestine damage and nutrient malabsorption.</p>
+      </div>
+      <h3>Celiac Disease</h3>
+    </div>
+    <div class="service-box">
+      <div class="image-container">
+        <img src="img/svc8.jpg" alt="H. Pylori">
+        <p class="service-description">Bacterial infection that affects the stomach lining and is a major cause of ulcers and gastritis.</p>
+      </div>
+      <h3>H. Pylori Infections</h3>
+    </div>
+    <div class="service-box">
+      <div class="image-container">
+        <img src="img/svc6.jpg" alt="Crohn’s Disease">
+        <p class="service-description">A type of IBD causing inflammation anywhere along the digestive tract, leading to pain, diarrhea, and weight loss.</p>
+      </div>
+      <h3>Crohn’s Disease</h3>
+    </div>
+    <!-- End of service boxes -->
   </div>
-  <h3>IBS - Irritable Bowel Syndrome</h3>
-</div>
-
-<div class="service-box">
-  <div class="image-container">
-    <img src="img/svc4.jpg" alt="IBD">
-    <p class="service-description">An umbrella term for chronic inflammation of the digestive tract, including Crohn's disease and ulcerative colitis.</p>
+  <!-- Move View More and Disease List here, after services-grid -->
+  <div style="text-align:center; margin-top:30px;">
+    <a href="#" id="viewMoreLink" class="view-more-link">View More</a>
+    <div id="diseaseList" class="disease-list" style="display:none; margin-top:20px;">
+      <div class="disease-container">
+  <div class="disease-column">
+    <div class="disease-box">ABDOMINAL PAIN</div>
+    <div class="disease-box">COLITIS</div>
+    <div class="disease-box">CONSTIPATION</div>
+    <div class="disease-box">FATTY LIVER ( NAFLD)</div>
   </div>
-  <h3>IBD - Inflammatory Bowel Disease</h3>
-</div>
 
-<div class="service-box">
-  <div class="image-container">
-    <img src="img/svc3.jpg" alt="GERD">
-    <p class="service-description">A condition where stomach acid frequently flows back into the esophagus, causing heartburn and discomfort.</p>
+  <div class="disease-column">
+    <div class="disease-box">HEPATITIS</div>
+    <div class="disease-box">GASTRITIS</div>
+    <div class="disease-box">INDIGESTION</div>
+    <div class="disease-box">LIVER DISEASE</div>
   </div>
-  <h3>GERD - Gastroesophageal Reflux Disease</h3>
-</div>
 
-<div class="service-box">
-  <div class="image-container">
-    <img src="img/svc5.jpg" alt="Gall Bladder">
-    <p class="service-description">Disorders affecting the gallbladder, often involving gallstones or inflammation (cholecystitis).</p>
+  <div class="disease-column">
+    <div class="disease-box">ESOPHAGEAL DISEASE</div>
+    <div class="disease-box">GALLBLADDER STONES</div>
+    <div class="disease-box">ULCERATIVE COLITIS</div>
   </div>
-  <h3>Gall Bladder Diseases</h3>
 </div>
-
-<div class="service-box">
-  <div class="image-container">
-    <img src="img/svc6.jpg" alt="Peptic Ulcer">
-    <p class="service-description">Open sores that develop on the inner lining of the stomach or upper part of the small intestine due to acid erosion.</p>
+</div>
+    </div>
   </div>
-  <h3>Peptic Ulcer Disease</h3>
-</div>
-
-<div class="service-box">
-  <div class="image-container">
-    <img src="img/svc7.jpg" alt="Celiac Disease">
-    <p class="service-description">An autoimmune disorder triggered by gluten ingestion, leading to small intestine damage and nutrient malabsorption.</p>
-  </div>
-  <h3>Celiac Disease</h3>
-</div>
-
-<div class="service-box">
-  <div class="image-container">
-    <img src="img/svc8.jpg" alt="H. Pylori">
-    <p class="service-description">Bacterial infection that affects the stomach lining and is a major cause of ulcers and gastritis.</p>
-  </div>
-  <h3>H. Pylori Infections</h3>
-</div>
-
-<div class="service-box">
-  <div class="image-container">
-    <img src="img/svc6.jpg" alt="Crohn’s Disease">
-    <p class="service-description">A type of IBD causing inflammation anywhere along the digestive tract, leading to pain, diarrhea, and weight loss.</p>
-  </div>
-  <h3>Crohn’s Disease</h3>
-</div>
-
-
+<script src="script.js"></script>
 
 
 </div>
@@ -195,7 +224,6 @@ We specialize in treating acidity, ulcers, IBS, liver disorders, and more.”</p
     </div>
   </div><br><br>
   
-<script src="script.js"></script>
 </section>
 
 
@@ -207,14 +235,14 @@ We specialize in treating acidity, ulcers, IBS, liver disorders, and more.”</p
     <div class="contact-card">
       <div class="contact-info">
         <h2>GetWell Herbal Care Clinic</h2>
-        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 6389 892 833</p>
+        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 6369 892 833</p>
         <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong><br>
           BELL AMORSES COLONY,<br>
           COURT OPP, PALAYAMKOTTAI, TIRUNELVELI
         </p>
 
         <div class="social-icons">
-          <a href="#" class="social facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61577969558620" class="social facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/getwell_herbal_care/" class="social instagram" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/get-well-herbal-care-hospital-97a85a372" class="social linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>

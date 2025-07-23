@@ -39,3 +39,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var viewMoreLink = document.getElementById('viewMoreLink');
+    var diseaseList = document.getElementById('diseaseList');
+    if (viewMoreLink) {
+      viewMoreLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (diseaseList.style.display === 'none') {
+          diseaseList.style.display = 'flex';
+          viewMoreLink.textContent = 'Hide List';
+        } else {
+          diseaseList.style.display = 'none';
+          viewMoreLink.textContent = 'View More';
+        }
+      });
+    }
+  });

@@ -9,7 +9,99 @@ body, html {
   flex-direction: column;
   align-items: flex-start;
 }
+  .main-header {
+      background: #f4faff;
+      color: #185a9d;
+      padding-bottom: 10px;
+  /* border-bottom: 2px solid #185a9d; */
+    }
+    .logo-title {
+      font-size: 2.8rem;
+      font-weight: bold;
+      /* margin-left: 10px; */
+      letter-spacing: 1px;
+      background: linear-gradient(to bottom, #006d3c 0%, #43cea2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      /* text-fill-color: transparent; */
+      padding: 6px 18px;
+      display: inline-block;
+    }
 
+
+
+    @keyframes shine {
+      0% {
+        background-position: -200px 0;
+      }
+      100% {
+        background-position: 200px 0;
+      }
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-link {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #185a9d;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-link:hover, .nav-link:focus {
+      color: #43cea2;
+      text-decoration: underline;
+    }
+    .cta {
+      margin-top: 10px;
+      display: inline-block;
+    }
+.cta-phone-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: #fff !important;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 8px;
+  box-shadow: 0 2px 8px rgba(67, 206, 162, 0.12);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.cta-phone-btn i {
+  font-size: 1.2em;
+  margin-right: 6px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+    .cta-phone-btn:hover, .cta-phone-btn:focus {
+      background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+      box-shadow: 0 4px 16px rgba(24, 90, 157, 0.18);
+      color: #fff;
+      text-decoration: none;
+    }
+    @media (max-width: 700px) {
+      .logo-title {
+        font-size: 1.5rem;
+      }
+      .nav-links {
+        gap: 10px;
+      }
+      .cta {
+        font-size: 0.95rem;
+      }
+    }
+    
 .logo-title {
   font-size: 1.8rem;
   font-weight: bold;
@@ -70,15 +162,16 @@ body, html {
   gap: 30px;
 }
 
+
 .nav-link {
   color: green;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #f1c40f;
+.nav-link:hover, .nav-link:focus {
+  color: #43cea2;
 }
 
 .cta {
@@ -117,8 +210,8 @@ body, html {
 }
 
 /* Slide Backgrounds */
-.slide1 { background-image: url('img/hospital4.jpeg'); }
-.slide2 { background-image: url('img/hospital1.jpg'); }
+.slide1 { background-image: url('img/web2.webp'); }
+.slide2 { background-image: url('img/hospital.jpeg'); }
 
 
 .slide-content {
@@ -566,4 +659,100 @@ body {
   border-left: 5px solid #2d8659;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+  .view-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .disease-list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .disease-column {
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 20px 30px;
+    min-width: 180px;
+  }
+  .disease-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .disease-column li {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    color: #333;
+  }
+.disease-container {
+  display: flex;
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.disease-column {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px;
+}
+
+.disease-box {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.disease-box:hover {
+  background-color: #e6f4ff;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.disease-container {
+  display: flex;
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.disease-column {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px;
+}
+
+.disease-box {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.disease-box:hover {
+  background-color: #e6f4ff;
+  transform: scale(1.03);
+  cursor: pointer;
 }
