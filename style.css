@@ -375,7 +375,7 @@ body {
     display: block;
   }
 }
-}
+
 
 .about-content {
   flex: 2 1 650px;
@@ -1020,4 +1020,57 @@ body {
 .site-footer a:hover {
   color: #d0f0c0;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-wrapper {
+    padding: 16px 10px;
+    gap: 20px;
+  }
+
+  .contact-left {
+    padding: 16px 12px;
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .contact-box {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .contact-box i {
+    font-size: 18px;
+  }
+
+  .contact-box h4 {
+    font-size: 16px;
+  }
+
+  .contact-box p {
+    font-size: 13px;
+  }
+
+  .social-row {
+    margin-top: 20px;
+  }
+
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .contact-map {
+    height: 200px;
+  }
+
+  .contact-map iframe {
+    height: 200px;
+  }
 }
